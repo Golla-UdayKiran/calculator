@@ -5,6 +5,7 @@
   </head>
   <body>
     <p>Calculator</p>
+    <!-- Code changes are at the bottom. -->
     <p>
       <button onclick="
         updateCalculation('1');
@@ -75,6 +76,9 @@
         // Only use eval() for learning purposes.
         calculation = eval(calculation);
         console.log(calculation);
+
+        // Remember to save the calculation here.
+        localStorage.setItem('calculation', calculation);
     ">=</button>
     
       <button onclick="
@@ -86,6 +90,9 @@
       <button onclick="
         calculation = '';
         console.log(calculation);
+
+        // Remember to save the calculation here.
+        localStorage.setItem('calculation', calculation);
       ">Clear</button>
     </p>
 

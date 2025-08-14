@@ -5,6 +5,9 @@
   </head>
   <body>
     <p>Calculator</p>
+    <!-- Create an element to display the calculation. -->
+    <p class="js-calculation"></p>
+
     <!-- Code changes are at the bottom. -->
     <p>
       <button onclick="
@@ -75,7 +78,10 @@
         // it can potentially be given harmful code to run.
         // Only use eval() for learning purposes.
         calculation = eval(calculation);
-        console.log(calculation);
+
+        // Display the calculation on the page
+        // instead of console.log
+        displayCalculation();
 
         // Remember to save the calculation here.
         localStorage.setItem('calculation', calculation);
@@ -89,7 +95,10 @@
     <p>
       <button onclick="
         calculation = '';
-        console.log(calculation);
+
+        // Display the calculation on the page
+        // instead of console.log
+        displayCalculation();
 
         // Remember to save the calculation here.
         localStorage.setItem('calculation', calculation);
